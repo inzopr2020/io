@@ -1,5 +1,4 @@
 #pragma once
-
 #include <iostream>
 using namespace std;
 class pacjent_
@@ -12,7 +11,8 @@ public:
 	void zarezerwuj_wizyte(string data, string specjalizacja, string lekarz);
 	void zmien_dane(string telefon, string adres);
 	void zarejestruj_pacjenta(string imie, string nazwisko, string adres, string telefon, string pesel);
-	void zwroc_il_rezerwacji();
+	int zwroc_il_rezerwacji();
+	int numer_pacjenta();
 	pacjent_();
 	virtual ~pacjent_();
 };
