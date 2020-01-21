@@ -4,19 +4,22 @@
 
 harmonogram::harmonogram()
 {
+	terminy_zajete = 0;
 }
 
 
 harmonogram::~harmonogram()
 {
+
 }
+
 void harmonogram::przeslij_data(string data)
 {
-    cout << "Wybrana data to:" << data << endl;
+	terminy_zajete++;
+	return ;
+}
 
- }
-
-void harmonogram::utworz(string numer_licencji1)
+int harmonogram::harmonogram_pracy()
 {
-    numer_licencji = numer_licencji1;
+	return terminy_zajete;
 }
