@@ -5,14 +5,12 @@ class wizyta
 {private:
 	string data;
 	string godzina;
-	string lekarz;
-	string numer_karty_pacjenta;
-
+	bool koniec_wizyty;
+	
 public:
 	wizyta();
 	~wizyta();
-	void podsumuj_wizyte(string numer_karty_pacjenta1, string historia);
-	void zarezerwuj_wizyte(string data1, string godzina1, string lekarz1, string numer_karty_pacjenta1);
-
+	void podsumuj_wizyte(string numer_karty_pacjenta, string historia);
+	void zarezerwuj_wizyte(string data, string lekarz);
+	bool zakonczyc_wizyte();
 };
-
