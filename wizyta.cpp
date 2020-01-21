@@ -4,21 +4,29 @@
 
 wizyta::wizyta()
 {
+	koniec_wizyty = false;
+	
 }
 
 
 wizyta::~wizyta()
 {
 }
-void wizyta::podsumuj_wizyte(string numer_karty_pacjenta1, string historia)
-{
-	cout << historia << endl;
-}
-void wizyta::zarezerwuj_wizyte(string data1, string godzina1, string lekarz1, string numer_karty_pacjenta1)
-{
-	data = data1;
-	godzina = godzina1;
-	lekarz = lekarz1;
-	numer_karty_pacjenta = numer_karty_pacjenta1;
 
+bool wizyta::zakonczyc_wizyte()
+{
+	
+	return koniec_wizyty;
+}
+
+void wizyta::podsumuj_wizyte(string numer_karty_pacjenta, string historia)
+{
+	koniec_wizyty = true;
+	return;
+}
+
+void wizyta::zarezerwuj_wizyte(string data, string lekarz)
+{
+	koniec_wizyty = false;
+	return;
 }
